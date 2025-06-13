@@ -19,7 +19,9 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*', env('FRONTEND_URL')],
+    'allowed_origins' => [
+        env('FRONTEND_URL', 'https://whatsapp-gateway.sites.id'),
+    ],
 
     'allowed_origins_patterns' => [],
 
